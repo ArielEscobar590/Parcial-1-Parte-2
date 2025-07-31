@@ -21,19 +21,34 @@ while (True):
           num1 = int(input("Ingrese el primer Número:  "))
           num2 = int(input("Ingrese el segundo Número:  "))
           CalculoMCD(num1, num2)
-        #elif op == 2:
+        elif op == 2:
+         def Cadena(palabra, veces):
+            if veces == 0:
+                return 0
+            else:
+                print(palabra)
+                Cadena(palabra, veces - 1)
 
+         Pa = input("Ingrese la palabra que quieres repetir:  ")
+         times = int(input("Ingres las veces que lo quieras repetir:  "))
+         Cadena(Pa, times)
 
         #elif op == 3:
 
 
 
         elif op == 4:
+           def Convertir(num):
+              if num == 0:
+                     return 0
+              else:
+                    return num
+
 
 
        # elif op == 5:
 
-       # elif op == 6:
+        elif op == 6:
             break
 
 
@@ -41,16 +56,7 @@ while (True):
         def Conteodigi(conteo):
             if conteo==0:
                 return 0
-        def Convertir(num):
-            if num == 0:
-                return 0
-            else:
-                return num
-        def Cadena(palabra, veces):
-            if veces == 0:
-                return 0
-            else:
-                print(Cadena(palabra, veces - 1))
+
         def Conteoletra(num):
             if num == 0:
                 return 0
