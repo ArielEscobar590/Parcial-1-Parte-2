@@ -40,7 +40,7 @@ while (True):
         elif op == 4:
            binariolista = []
            def Convertir(num):
-              div = num / 2
+              div = int(num / 2)
               re =num % 2
               if div == 1:
                   binariolista.append(div)
