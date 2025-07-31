@@ -42,13 +42,14 @@ while (True):
            def Convertir(num):
               div = int(num / 2)
               re =num % 2
+              binariolista.append(re)
               if div == 1:
                   binariolista.append(div)
                   binariolista.reverse()
                   print(binariolista)
 
               else:
-                    binariolista.append(re)
+
                     return Convertir(div)
 
            number = int(input("Ingrese el Número a convertir:  "))
