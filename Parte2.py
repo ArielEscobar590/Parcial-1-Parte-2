@@ -1,5 +1,5 @@
 while (True):
-    #try:
+    try:
         print("\n--- MENU ---")
         print("1. Calcular MCD de dos números")
         print("2. Crear una cadena repetidad N veces")
@@ -38,11 +38,21 @@ while (True):
 
 
         elif op == 4:
+           binariolista = []
            def Convertir(num):
-              if num == 0:
-                     return 0
+              div = num / 2
+              re =num % 2
+              if div == 1:
+                  binariolista.append(div)
+                  binariolista.reverse()
+                  print(binariolista)
+
               else:
-                    return num
+                    binariolista.append(re)
+                    return Convertir(div)
+
+           number = int(input("Ingrese el Número a convertir:  "))
+           Convertir(number)
 
 
 
@@ -61,6 +71,5 @@ while (True):
             if num == 0:
                 return 0
 
-
-    #except:
-       # print("Ha ocurrido un error")
+    except:
+        print("Ha ocurrido un error")
